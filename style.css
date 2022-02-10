@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header{
+    background-color: #48C5CE;
+    padding: 10px;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+main{
+    padding: 20px;
+    background-image: url(images/images/people.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formContainer{
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+}
+
+.h2{
+    font-size: 17px;
+}
+
+.paragrafo_do_article{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+input,select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+}
+
+#email_do_usuario{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#lista{
+    margin-bottom: 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(images/images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+
+.submit{
+    margin-bottom: 10px;
+    color: white;
+    background-color: #48C5CE;
+    font-weight: 900;
+}
+
+input#name_do_usuario, input#email_do_usuario, select#lista, input.submit{
+    cursor: pointer;
+}
+
+footer{
+    background-color: #202121;
+    padding: 40px;
+}
+
+.section_do_footer{
+    text-align: center;
+}
+
+
+
+.img_do_palestrante{
+    width: 160px;
+    margin-top: 20px;
+}
+
+.section_do_paragrafo{
+    display: inline-block;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.paragrafo_do_palestrante, h3{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 719px) {
+    
+    footer{
+        padding-top: 60px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .img_do_palestrante{
+        width: 200px;
+        margin: auto;
+        display: block;
+    }
+    
+    .section_do_paragrafo{
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    
+    .formContainer{
+        max-width: 300px;
+        background-color: #FFFFFFBB;
+        padding: 20px;
+        float: none;
+        margin: auto;
+    }
+    
+}
